@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="287dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="8dp"
+        android:clipToOutline="true"
+        android:contentDescription="nice"
+        android:src="@drawable/logo"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="450dp"
+        android:fontFamily="monospace"
+        android:textAlignment="center"
+        android:text="Stroke Prediction"
+        android:textSize="@dimen/_21sdp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="475dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="695dp"
+        android:fontFamily="monospace"
+        android:text="By Anggun Lisnawati"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="630dp" />
+
+    <Button
+        android:id="@+id/btnMasuk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masuk"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:backgroundTint="@color/pink"
+        android:layout_marginTop="590dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="25dp"
+        android:textAlignment="center"
+        android:text="Ini adalah aplikasi untuk mengecek Prediksi Penyakit Stroke" />
+
+
+</RelativeLayout>

@@ -1,0 +1,520 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SimulasiModelActivity"
+    android:background="@drawable/background">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="250dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            app:cardCornerRadius="25dp"
+            app:cardBackgroundColor="#FA72A8"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Feature 1 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fitur1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="30dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/tvjudul"
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:text="Masukan Jenis Kelamin"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold|normal"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+                        <EditText
+                            android:id="@+id/etgender"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:ems="15"
+                            android:hint="Laki - laki =0; Perempuan=1"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/grey"
+                            tools:ignore="HardcodedText"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tvjudul"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- Feature 2 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fitur2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="30dp"
+                    app:layout_constraintTop_toBottomOf="@+id/fitur1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:text="Masukan Umur"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold|normal"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+                        <EditText
+                            android:id="@+id/etAge"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:ems="15"
+                            android:hint="Tulis Angka saja"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/grey"
+                            tools:ignore="HardcodedText"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView2"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- Feature 3 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fitur3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="30dp"
+                    app:layout_constraintTop_toBottomOf="@+id/fitur2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:text="Memiliki Tekanan darah?"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold|normal"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+                        <EditText
+                            android:id="@+id/ethypertension"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:ems="15"
+                            android:hint="Tidak=0, Ya=1"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/grey"
+                            tools:ignore="HardcodedText"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView3"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- Feature 4 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fitur4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="30dp"
+                    app:layout_constraintTop_toBottomOf="@+id/fitur3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:text="Memiliki Penyakit Jantung?"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold|normal"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+                        <EditText
+                            android:id="@+id/heart_disease"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:ems="15"
+                            android:hint="Tidak=0, Ya=1"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/grey"
+                            tools:ignore="HardcodedText"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView4"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- Feature 5 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fitur5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="30dp"
+                    app:layout_constraintTop_toBottomOf="@+id/fitur4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:text="Sudah Menikah?"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold|normal"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+                        <EditText
+                            android:id="@+id/ever_married"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:ems="15"
+                            android:hint="Tidak=0, Ya=1"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/grey"
+                            tools:ignore="HardcodedText"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView5"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- Feature 6 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fitur6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="30dp"
+                    app:layout_constraintTop_toBottomOf="@+id/fitur5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_marginStart="15dp"
+                            android:text="Apa jenis pekerjaan Anda?"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold|normal"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+                        <EditText
+                            android:id="@+id/work_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:textSize="10sp"
+                            android:hint="Tidak bekerja=0, PNS=1, Karyawan=2, Wirausaha=3, Anak-anak=4  "
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/grey"
+                            tools:ignore="HardcodedText"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView6"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- Feature 7 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fitur7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="30dp"
+                    app:layout_constraintTop_toBottomOf="@+id/fitur6"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:text="Apa jenis tempat tinggal anda?"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold|normal"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+                        <EditText
+                            android:id="@+id/Residence_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:ems="15"
+                            android:hint="Perumahan =0, Pedesaan=1"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/grey"
+                            tools:ignore="HardcodedText"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView7"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+                <!-- Feature 8 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fitur8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="30dp"
+                    app:layout_constraintTop_toBottomOf="@+id/fitur7"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:text="Masukan gula darah"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold|normal"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+                        <EditText
+                            android:id="@+id/avg_glucose_level"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:ems="15"
+                            android:hint="Masukan angka"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/grey"
+                            tools:ignore="HardcodedText"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView8"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <!-- Feature 9 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fitur9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="30dp"
+                    app:layout_constraintTop_toBottomOf="@+id/fitur8"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:text="Masukan BMI"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold|normal"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+                        <EditText
+                            android:id="@+id/bmi"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:ems="15"
+                            android:hint="Masukan Angka"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/grey"
+                            tools:ignore="HardcodedText"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView9"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <!-- Feature 10 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fitur10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="30dp"
+                    app:layout_constraintTop_toBottomOf="@+id/fitur9"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_marginStart="15dp"
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:text="Status merokok Anda?"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold|normal"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+                        <EditText
+                            android:id="@+id/smoking_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:textSize="10sp"
+                            android:hint="Tidak diketahui=0, pernah=1, tidak pernah=2, merokok=3"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/grey"
+                            tools:ignore="HardcodedText"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView10"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- Predict Button -->
+                <Button
+                    android:backgroundTint="#D4018F"
+                    android:id="@+id/btnPredict"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="Predict"
+                    app:layout_constraintTop_toBottomOf="@+id/fitur10"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <!-- Result CardView -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/hasil"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="150dp"
+                    app:cardCornerRadius="30dp"
+                    app:layout_constraintTop_toBottomOf="@+id/btnPredict"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <TextView
+                        android:id="@+id/tvHasil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="15"
+                        android:layout_gravity="center"
+                        android:hint="Hasil"
+                        android:inputType="numberDecimal"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        tools:ignore="HardcodedText" />
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

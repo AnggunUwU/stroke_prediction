@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModelActivity"
+    android:background="@drawable/background">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#FA72A8"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="25dp"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Model"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:textStyle="bold|normal"/>
+    </androidx.cardview.widget.CardView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="15dp"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nav">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            app:cardBackgroundColor="#FFB5D8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintHorizontal_bias="0.551"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nav">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="830dp">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fitur1"
+                    android:layout_width="match_parent"
+                    android:layout_height="800dp"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="100dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.551"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:text="Tentang Model"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold|normal" />
+
+                    <TextView
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="240dp"
+                        android:textSize="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tujuan aplikasi ini adalah untuk memprediksi Penyakit Stroke dan cara menggunakannya dengan cara memasukan Input data riwayat hasil test yang nanti akan di prediksi penyakit Stroke nya. \n1.Lapisan input (dense):32 unit,aktivasi ReLU,dengan input_shapenya sesuai dengan banyak x_train.\n2.Lapisan Dense:32 unit, dengan aktivasi Relu.\n3.lapisan Output(Dense):1 unit,dengan aktivasi Sigmoid" />
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/modelss" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_marginTop="400dp"
+                        android:src="@drawable/dense" />
+                </androidx.cardview.widget.CardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

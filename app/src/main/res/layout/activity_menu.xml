@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity"
+    android:background="@drawable/background">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="10dp"
+        android:layout_height="550dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardBackgroundColor="#FA72A8">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnAbout"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="25dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/tentang">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="About"
+                    android:textAlignment="center"
+                    android:textColor="#D4018F"
+                    android:fontFamily="monospace"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnDataset"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_rowWeight="1"
+            android:layout_marginStart="240dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_columnWeight="1"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="25dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/dataset">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Dataset"
+                    android:textAlignment="center"
+                    android:textColor="#D4018F"
+                    android:fontFamily="monospace"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+                </TextView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnModel"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="200dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="25dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/model">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Model"
+                    android:textAlignment="center"
+                    android:textColor="#D4018F"
+                    android:fontFamily="monospace"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnFitur"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_rowWeight="1"
+            android:layout_marginStart="240dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="200dp"
+            android:layout_columnWeight="1"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="25dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/fitur">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Fitur"
+                    android:textAlignment="center"
+                    android:textColor="#D4018F"
+                    android:fontFamily="monospace"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+                </TextView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnSimulasi"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="375dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="25dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/simulasi">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="monospace"
+                    android:text="Simulasi Model Ann"
+                    android:textSize="@dimen/_15sdp"
+                    android:textAlignment="center"
+                    android:textColor="#D4018F"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="80dp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardBackgroundColor="#FA72A8"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center_horizontal"
+            android:text="MAIN MENU"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_25ssp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="115dp"
+            tools:layout_editor_absoluteY="32dp" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
